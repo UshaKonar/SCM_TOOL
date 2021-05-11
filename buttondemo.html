@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Document</title>
+     <script>
+         function clickme(){
+             var select=document.getElementById("selectionbox");
+             alert(select.options[select.selectedIndex].value);
+         }
+
+     </script>
+    </head>
+    <body>
+        <select name="fruit" id="selectionbox">
+            <option value="apple">apple</option>
+            <option value="grapes">grapes</option>
+            <option value="mango">mango</option>
+        </select>
+        <button onclick="clickme()">click</button>
+    </body>
+</html>
